@@ -20,4 +20,5 @@ country4 = Countries("Fiji", "Ernest", 111,112)
 
 print(Countries.num_of_countries)
 print(country4.leader)
-print(country2.pop_incr())
+country2.pop_incr()
+print(country2.pop)
