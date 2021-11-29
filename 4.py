@@ -1,35 +1,11 @@
-class Employee:
-    num_of_emps = 0
-    raise_amount = 1.04
-    
-    def __init__(self, first, last, salary):
-         self.first = first
-         self.last = last
-         self.salary = salary
-         self.mail = first + '.' + last + '@veritas.edu.ng'
-         
-         Employee.num_of_emps +=1
-         
-    def fullname(self):
-        return self.first + self.last
-    
-    def salary_raise(self):
-        self.pay = int(self.salary * self.raise_amount)
-    
-       
-print(Employee.num_of_emps)  
-emp_1 = Employee('Amina', 'Zaria', 60944)
-emp_2 = Employee('Bola', 'Tinubu', 45899)
-    
+class Person:
+    def __init__(self): 
+        self.firstname = input('Enter first name:  ')
+        self.lastname = input('Enter last name:  ')
+    def show_full_name(self): 
+        return self.firstname + ' ' + self.lastname 
+    #creating an object with the classperson2 = Person() person2.show_full_name()
 
-
-print(Employee.num_of_emps)
-#print(Employee.__dict__)
-# print(Employee.raise_amount)
-# print(emp_1.raise_amount)
-# print(emp_2.raise_amount)
-
-
-
-
-
+person1 = Person()
+print(person1.firstname)
+print(person1.lastname)
